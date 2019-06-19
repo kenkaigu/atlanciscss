@@ -1,0 +1,90 @@
+body {
+  margin: 0 !important;
+  font-family:monospace;
+  overflow: hidden; }
+
+.botpress__side-internal {
+  background-color:rgba(90, 195, 202, 0.3);
+  border: 1px solid rgba(0, 0, 0, .3);
+}
+ 
+.botpress__side-external .botpress__side-internal .botpress__side-header {
+  border-bottom: 2px solid #fff;
+}
+ 
+.botpress__side-header-bot-name,
+.botpress__message-date,
+.botpress__side-item-name,
+.botpress__side-internal .botpress__side-header .botpress__toggle-convos-button i,
+.botpress__side-internal .botpress__side-header .botpress__close-button i {
+  color: #0c36bf9d;
+}
+ 
+.botpress__side-conversation,
+.botpress__side-header,
+.botpress__convos-list {
+  background-color:#0c36bf9d;
+}
+ 
+.botpress__side-external .botpress__side-internal .botpress__side-conversation .botpress__side-conversation-bottom .botpress__side-new-message {
+  background-color: transparent;
+}
+ 
+.botpress__side-external .botpress__side-item-right .botpress__side-item-title .botpress__side-item-date span,
+.botpress__side-external .botpress__side-internal .botpress__convos-list .botpress__convo-item .botpress__side-item-right .botpress__side-item-text {
+  color: #000;
+}
+ 
+.botpress__side-external .botpress__side-internal .botpress__convos-list .botpress__convo-item:hover {
+  background-color: rgba(0, 0, 0, .35);
+}
+.bp-widget-web {
+  border: none;
+  display: block;
+  position: fixed;
+  visibility: none;
+  z-index: 100000;
+  max-height: 100vh;
+  max-width: 100vw;
+  transition: none;
+  background: none transparent;
+  opacity: 1;
+  font-size: 16px;    
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+}
+
+.bp-widget-widget {
+  top: auto;
+  left: auto;
+  bottom: 24px;
+  right: 36px;
+  width: 76px !important;
+  height: 76px !important; 
+}
+
+.bp-widget-convo {
+  top: auto;
+  right: auto;
+  bottom: 24px;
+  right: 36px;
+  width: 420px !important;
+  min-height: 382px !important;
+  max-height: 500px !important;
+}
+
+.bp-widget-side {
+  top: 0px;
+  left: auto;
+  bottom: 0px;
+  right: 0px;
+  width: 360px;
+  height: 100% !important;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .bp-widget-side {
+    width: 100%;
+  }
+}
